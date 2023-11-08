@@ -11,7 +11,9 @@ def Meeting_Master(filename):
 
     with open("uploads/"+filename,'r') as file:
         
-        data = file.read()
+        data = file.readlines()
+        print("1123535 23")
+        print(data)
 
         thread_minutes = ReturnValueThread(target=Compute_Create_Meeting_Minutes, args=(data,))
         thread_action_items = ReturnValueThread(target=Compute_Create_Action_Items, args=(data,))
@@ -35,7 +37,9 @@ def Meeting_Master(filename):
 
 def Compute_Create_Meeting_Minutes(data):
 
-    completion = openai.ChatCompletion.create(
+    print("Before")
+    print(data)
+    completion = client.chat.completions.create(
         model="gpt-3.5-turbo-16k",
         messages=[
             {"role": "system", "content": "You are a project management assistant, skilled in explaining complex programming concepts with creative flair."},
@@ -44,7 +48,9 @@ def Compute_Create_Meeting_Minutes(data):
             {"role": "user", "content": "Below is the transcript from a meeting. Please create minutes for this meeting. Please format your response such as in this example: Meeting Minutes\nMeeting Date: 6/11/2023\nMeeting Start Time: 2.30 PM\nEnd Time: 3.00 PM\nMeeting Location: Online\n\nAttendees: Steven Yuen, Jason Hong, Chris Qu, David Gailey\n\nAgenda:\n1. Differentiating our product from Copilot\n2. Tailoring our solution towards an Agile work environment\n3. Leveraging Copilot for integration into our ecosystem\n4. Discussing the use of meeting minutes and ticket generation\n5. Designing a centralized dashboard for managing meetings\n\nMinutes:\n1. Steven Yuen began the meeting by emphasizing the need to differentiate our solution from Copilot. He highlighted the gaps in Copilot, such as its lack of integration with Agile work environments. Steven suggested focusing on making our solution Agile-focused and tailoring it towards Telstra's needs.\n2. The discussion revolved around whether to leverage Copilot or build our own solution. Jason Hong proposed integrating Copilot into our ecosystem in the long term, but Steven expressed concerns about wasted resources if we eventually migrate to Copilot. The group acknowledged the strategic partnership with Copilot and the possibility of collaborating to integrate our solution.\n3. The group agreed that a centralized dashboard would be a valuable feature, allowing for a seamless transition between meetings and providing a consistent timeline. The need to address Telstra's specific requirements and challenges with Agile meetings was emphasized.\n4. Steven mentioned the potential value of meeting minutes and retrospectives for Telstra employees, but Chris Qu highlighted that retrospectives might not be well-received by team members. David Gailey suggested focusing on the usefulness of a centralized dashboard and improving the employee experience.\n5. Steven expressed his intention to research Agile methodologies and the design of a centralized dashboard. He requested input from the team on potential solutions and committed to balancing existing work with the new requirements.\n\nNext Steps:\n1. Steven will conduct research on Agile methodologies and design a solution tailored to Telstra's needs.\n2. Jason and Chris will continue their current work while remaining open to potential changes based on the research findings.\n3. David will assist in gathering specific requirements and will communicate with external stakeholders.\n\nAction Items:\n1. Steven will follow up to obtain requirements files.\n2. The team will reconvene for further discussion and updates on progress.\n\nMeeting Conclusion:\nThe meeting concluded with Steven confirming that he would reach out for requirements and updates. The team agreed to continue working on their tasks while remaining flexible to include any changes based on the research findings.\n\nMeeting End Time: 3.00 PM"},
             {"role": "user", "content": data}
         ]
-    )
+    )    
+    print("After")
+
 
     # f = open("processed/minutes.txt", "w")
     # f.write(str(completion.choices[0].message))
@@ -59,9 +65,10 @@ def Compute_Create_Meeting_Minutes(data):
 
     # print(completion.choices[0].message)
 
+    print(completion)
     print("Marker")
-    print(completion.choices[0].message["content"])
-    to_return = meeting_minute_string_to_dict(completion.choices[0].message["content"])
+    print(completion.choices[0].message.content)
+    to_return = meeting_minute_string_to_dict(completion.choices[0].message.content)
     # to_return = completion.choices[0].message["content"]
 
 
@@ -69,7 +76,7 @@ def Compute_Create_Meeting_Minutes(data):
 
 def Compute_Create_Action_Items(data):
 
-    completion = openai.ChatCompletion.create(
+    completion = client.chat.completions.create(
         model="gpt-3.5-turbo-16k",
         messages=[
             {"role": "system", "content": "You are a project management assistant, skilled in explaining complex programming concepts with creative flair."},
@@ -78,8 +85,9 @@ def Compute_Create_Action_Items(data):
             {"role": "user", "content": data}
         ]
     )
+    print(completion.choices[0].message.content)
 
-    to_return=action_splitter(completion.choices[0].message["content"])
+    to_return=action_splitter(completion.choices[0].message.content)
 
     del to_return['Action Items:']
 
@@ -92,7 +100,7 @@ def Compute_Create_Action_Items(data):
 
 def Compute_Create_Next_Agenda(data):
     
-    completion = openai.ChatCompletion.create(
+    completion = client.chat.completions.create(
         model="gpt-3.5-turbo-16k",
         messages=[
             {"role": "system", "content": "You are a project management assistant, skilled in explaining complex programming concepts with creative flair."},
@@ -101,8 +109,9 @@ def Compute_Create_Next_Agenda(data):
             {"role": "user", "content": data}
         ]
     )
+    print(completion.choices[0].message.content)
 
-    to_return = agend_to_dict(completion.choices[0].message["content"])
+    to_return = agend_to_dict(completion.choices[0].message.content)
 
     return to_return
 
@@ -135,7 +144,7 @@ def Agile_Master(filename):
 
 def Compute_Suggest_Jira_Tickets(data):
     
-    completion = openai.ChatCompletion.create(
+    completion = client.chat.completions.create(
         model="gpt-3.5-turbo-16k",
         messages=[
             {"role": "system", "content": "You are a project management assistant, skilled in making Jira tickets."},
@@ -152,14 +161,15 @@ def Compute_Suggest_Jira_Tickets(data):
     # print(completion.choices[0].message["content"])
 
     # return ticket_splitter(completion.choices[0].message)
+    print(completion.choices[0].message.content)
 
-    return ticket_splitter(completion.choices[0].message["content"])
+    return ticket_splitter(completion.choices[0].message.content)
 
 def Compute_User_Stories(data):
 
     print("I'm runnung here 2")
     
-    completion = openai.ChatCompletion.create(
+    completion = client.chat.completions.create(
         model="gpt-3.5-turbo-16k",
         messages=[
             {"role": "system", "content": "You are a project management assistant, skilled in making agile user stories."},
@@ -174,8 +184,9 @@ def Compute_User_Stories(data):
     # print(completion.choices[0].message["content"])
     # print("ticket splitter")
 
+    print(completion.choices[0].message.content)
 
-    return user_story_splitter(completion.choices[0].message["content"])
+    return user_story_splitter(completion.choices[0].message.content)
     # return (completion.choices[0])
 
 
@@ -199,7 +210,7 @@ def Retro_Master(filename):
 
 def Compute_Retro_Suggestions(data):
     
-    completion = openai.ChatCompletion.create(
+    completion = client.chat.completions.create(
         model="gpt-3.5-turbo-16k",
         messages=[
             {"role": "system", "content": "You are a project management assistant, skilled in making agile retro ceremony action points."},
@@ -208,8 +219,9 @@ def Compute_Retro_Suggestions(data):
             {"role": "user", "content": data}
         ]
     )
+    print(completion.choices[0].message.content)
 
-    to_return = retro_splitter(completion.choices[0].message["content"])
+    to_return = retro_splitter(completion.choices[0].message.content)
     return [value for value in to_return.values()]
 
 
@@ -217,7 +229,7 @@ def Compute_Retro_Suggestions(data):
 
 def Compute_Meta(data):
 
-    completion = openai.ChatCompletion.create(
+    completion = client.chat.completions.create(
         model="gpt-3.5-turbo-16k",
         messages=[
             {"role": "system", "content": "You are a project management assistant, skilled in extracting information from meeting transcripts."},
@@ -226,20 +238,25 @@ def Compute_Meta(data):
             {"role": "user", "content": data}
         ]
     )
-
+    print(000000000000000000000000000000)
     print(completion)
-    
-    return split_meta_info(completion.choices[0].message["content"])
+    print(111111111111111111111111111111)
+    print(completion.choices[0].message.content)
+    print(2222222222222222222222222)
+    return split_meta_info(completion.choices[0].message.content)
 
 def Master_AI(filename,ID,meta_name,meta_type):
-
-    with open("meetings/"+str(ID)+'/'+filename,'r') as file:
+    with open("./meetings/"+str(ID)+'/'+filename,'r', encoding='cp1252') as f:
     
-        data = file.read()
+        print(f)
+        data = f.read()
+        print('-----------')
+
 
 
     # Meta
     thread_meta = ReturnValueThread(target=Compute_Meta, args=(data,))
+    print(thread_meta)
 
     # Meeting
     thread_minutes = ReturnValueThread(target=Compute_Create_Meeting_Minutes, args=(data,))
@@ -263,16 +280,19 @@ def Master_AI(filename,ID,meta_name,meta_type):
     # thread_story.start()
 
     thread_retro.start()
+    print('~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~')
+    print(thread_meta)
 
     meta_dict = thread_meta.join()
 
-    # print(meta_dict)
+    print("~~~~~~~~~")
+    print(meta_dict)
 
 
 
     # meta_file = open("meetings/"+str(ID)+'/meta.json', "w") 
 
-    meta_dict_to_append = {'ID':ID,'title':meta_name,'type':meta_type,'date':meta_dict['Meeting Date'],'duration':meta_dict['Duration'],'attendees':meta_dict['Attendees']}
+    meta_dict_to_append = {'ID':ID,'title':meta_name,'type':meta_type,'date': meta_dict['Meeting Date'] if meta_dict != None else '','duration':meta_dict['Duration'] if meta_dict != None else '','attendees':meta_dict['Attendees'] if meta_dict != None else ''}
 
     make_file_metadata('meetings/' +str(ID),meta_dict_to_append)
 
@@ -282,7 +302,7 @@ def Master_AI(filename,ID,meta_name,meta_type):
             'ID':ID,
             'title':meta_name,
             'type':meta_type,
-            'date':meta_dict['Meeting Date'],
+            'date':meta_dict['Meeting Date'] if meta_dict != None else '',
             'duration':meta_dict['Duration'],
             'attendees':meta_dict['Attendees']
         },

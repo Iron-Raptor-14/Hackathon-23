@@ -14,6 +14,7 @@ app = Flask(__name__)
 CORS(app)
 app.config['UPLOAD_FOLDER'] = 'meetings/1'
 app.config['SESSION_TYPE'] = 'filesystem'
+app.config['MAX_CONTENT_LENGTH'] = 50 * 1024 * 1024
 app.secret_key = 'super secret key'
 # app.config['JSON_SORT_KEYS'] = False
 app.json.sort_keys = False
@@ -145,20 +146,23 @@ def home_page():
 @app.route('/uploadtranscript', methods=[ 'POST'])
 @cross_origin() # allow all origins all methods
 def upload_file():
+    print(request.method)
     if request.method == 'POST':
         # check if the post request has the file part
-        if 'file' not in request.files:
-            flash('No file part')
-            print('here 1')
-            return redirect(request.url)
-        file = request.files['file']
+        # if 'file' not in request.json:
+        #     print(request.json)
+        #     flash('No file part')
+        #     print('here 1')
+        #     return redirect(request.url)
+        print(request.form)
+        file = dict(request.files)['files']
         # If the user does not select a file, the browser submits an
         # empty file without a filename.
-        if file.filename == '':
-            flash('No selected file')
-            print('here 2')
-            return redirect(request.url)
-        if file and allowed_file(file.filename):
+        # if file.filename == '':
+        #     flash('No selected file')
+        #     print('here 2')
+        #     return redirect(request.url)
+        if file.filename:
             filename = secure_filename(file.filename)
             global meeting_counter
             old_meeting_counter = meeting_counter
@@ -174,29 +178,31 @@ def upload_file():
             # meta_name = request.form.get('name')
             # meta_date = request.form.get('date')
 
-            try:
-                meta_dict = Master_AI(filename,meeting_counter,meta_name,meta_type)
+            print(filename)
+            print(meeting_counter)
+            print(meta_name)
+            print(meta_type)
 
-            # make_file_metadata('meetings/' +str(meeting_counter),{'ID':meeting_counter,'title':meta_name,'type':meta_type,'date':'1/1/2020','duration':10,'attendees':["Attendees"]})
+            meta_dict = Master_AI(filename,meeting_counter,meta_name,meta_type)
 
-            # print(meta_data)
-            
-            
-                meeting_counter = meeting_counter + 1
-            except:
-                pass
-                # print('exception')
-                # for root, dirs, files in os.walk( os.getcwd() + '/meetings'):
-                #     if filename in files:
-                #         with open(str(root)+'/master_output','r') as file:
-                #             data = json.load(file)
+        # make_file_metadata('meetings/' +str(meeting_counter),{'ID':meeting_counter,'title':meta_name,'type':meta_type,'date':'1/1/2020','duration':10,'attendees':["Attendees"]})
 
-                #             return jsonify({'ID': data['Meta']['ID'],'title':data['Meta']['title'],'type':data['Meta']['type'],'date':data['Meta']['date'],'attendees':data['Meta']['attendees']})
-            
+        # print(meta_data)
+        
+        
+            meeting_counter = meeting_counter + 1
+            return jsonify({'ID': old_meeting_counter,'title':meta_dict['title'],'type':meta_dict['type'],'date':meta_dict['date'],'attendees':meta_dict['attendees']}) 
+            # print('exception')
+            # for root, dirs, files in os.walk( os.getcwd() + '/meetings'):
+            #     if filename in files:
+            #         with open(str(root)+'/master_output','r') as file:
+            #             data = json.load(file)
+
+            #             return jsonify({'ID': data['Meta']['ID'],'title':data['Meta']['title'],'type':data['Meta']['type'],'date':data['Meta']['date'],'attendees':data['Meta']['attendees']})
+        
 
   
-            return jsonify({'ID': old_meeting_counter,'title':meta_dict['title'],'type':meta_dict['type'],'date':meta_dict['date'],'attendees':meta_dict['attendees']}) 
-    return
+    return jsonify({})
 
 @app.route('/masterlist', methods=['GET'])
 @cross_origin() # allow all origins all methods.
