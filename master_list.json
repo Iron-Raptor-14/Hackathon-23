@@ -44,6 +44,16 @@
         ]
     },
     {
+        "ID": 6,
+        "title": "Retro D",
+        "type": "Retrospective",
+        "date": "September 19, 2023",
+        "duration": "1 hour",
+        "attendees": [
+            "Jordan, Taylor, Casey, Alex, Morgan"
+        ]
+    },
+    {
         "ID": 3,
         "title": "Progress Meeting 8/11/2023",
         "type": "Standup",
