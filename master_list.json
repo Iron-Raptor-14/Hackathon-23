@@ -1,11 +1,13 @@
 [
     {
-        "ID": 4,
-        "title": "a",
+        "ID": 7,
+        "title": "Stand Up A",
         "type": "Standup",
-        "date": "",
-        "duration": "",
-        "attendees": ""
+        "date": "N/A",
+        "duration": "N/A",
+        "attendees": [
+            "N/A"
+        ]
     },
     {
         "ID": 5,
@@ -45,12 +47,12 @@
     },
     {
         "ID": 6,
-        "title": "Retro D",
-        "type": "Retrospective",
-        "date": "September 19, 2023",
-        "duration": "1 hour",
+        "title": "Sprint Planning B",
+        "type": "Sprint Planning",
+        "date": "N/A",
+        "duration": "N/A",
         "attendees": [
-            "Jordan, Taylor, Casey, Alex, Morgan"
+            "N/A"
         ]
     },
     {

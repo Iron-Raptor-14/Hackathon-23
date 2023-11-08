@@ -246,7 +246,10 @@ def Compute_Meta(data):
     return split_meta_info(completion.choices[0].message.content)
 
 def Master_AI(filename,ID,meta_name,meta_type):
-    with open("./meetings/"+str(ID)+'/'+filename,'r', encoding='cp1252') as f:
+    extension = filename.split('.')[-1]
+    encode = 'cp1252' if extension == "txt" else 'cp437' if extension == 'docx' else ''
+
+    with open("./meetings/"+str(ID)+'/'+filename,'r', errors='ignore') as f:
     
         # print(f)
         data = f.read()
