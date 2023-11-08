@@ -44,6 +44,6 @@ out_file.close()
 
 
 # 
-print(r.json())
+# print(r.json())
 
 # print(r.json()['data']["Meta"]['ID'])

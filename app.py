@@ -116,20 +116,20 @@ def home_page():
         # check if the post request has the file part
         if 'file' not in request.files:
             flash('No file part')
-            print('here 1')
+            # print('here 1')
             return redirect(request.url)
         file = request.files['file']
         # If the user does not select a file, the browser submits an
         # empty file without a filename.
         if file.filename == '':
             flash('No selected file')
-            print('here 2')
+            # print('here 2')
             return redirect(request.url)
         if file and allowed_file(file.filename):
             filename = secure_filename(file.filename)
             file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
             Meeting_Master(filename)
-            print('here 3')
+            # print('here 3')
             # return redirect(url_for('download_file', name=filename))
             return
             return redirect(request.url)
@@ -146,7 +146,7 @@ def home_page():
 @app.route('/uploadtranscript', methods=[ 'POST'])
 @cross_origin() # allow all origins all methods
 def upload_file():
-    print(request.method)
+    # print(request.method)
     if request.method == 'POST':
         # check if the post request has the file part
         # if 'file' not in request.json:
@@ -154,7 +154,7 @@ def upload_file():
         #     flash('No file part')
         #     print('here 1')
         #     return redirect(request.url)
-        print(request.form)
+        # print(request.form)
         file = dict(request.files)['files']
         # If the user does not select a file, the browser submits an
         # empty file without a filename.
@@ -169,7 +169,7 @@ def upload_file():
             make_folder(meeting_counter)
             app.config['UPLOAD_FOLDER'] = 'meetings/' +str(meeting_counter)
             file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
-            print("running")
+            # print("running")
             
             # Access form data
             meta_type = request.form.get('meetingType')
@@ -178,10 +178,10 @@ def upload_file():
             # meta_name = request.form.get('name')
             # meta_date = request.form.get('date')
 
-            print(filename)
-            print(meeting_counter)
-            print(meta_name)
-            print(meta_type)
+            # print(filename)
+            # print(meeting_counter)
+            # print(meta_name)
+            # print(meta_type)
 
             meta_dict = Master_AI(filename,meeting_counter,meta_name,meta_type)
 
@@ -228,20 +228,20 @@ def meeting_route():
         # check if the post request has the file part
         if 'file' not in request.files:
             flash('No file part')
-            print('here 1')
+            # print('here 1')
             return redirect(request.url)
         file = request.files['file']
         # If the user does not select a file, the browser submits an
         # empty file without a filename.
         if file.filename == '':
             flash('No selected file')
-            print('here 2')
+            # print('here 2')
             return redirect(request.url)
         if file and allowed_file(file.filename):
             filename = secure_filename(file.filename)
             file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
             to_return = Meeting_Master(filename)
-            print('here 3')
+            # print('here 3')
 
             out_file = open("processed/meeting.json", "w")  
     
@@ -258,20 +258,20 @@ def agile_route():
         # check if the post request has the file part
         if 'file' not in request.files:
             flash('No file part')
-            print('here 1')
+            # print('here 1')
             return redirect(request.url)
         file = request.files['file']
         # If the user does not select a file, the browser submits an
         # empty file without a filename.
         if file.filename == '':
             flash('No selected file')
-            print('here 2')
+            # print('here 2')
             return redirect(request.url)
         if file and allowed_file(file.filename):
             filename = secure_filename(file.filename)
             file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
             to_return = Agile_Master(filename)
-            print('here 3')
+            # print('here 3')
 
             out_file = open("processed/agile.json", "w")  
     
@@ -288,20 +288,20 @@ def retro_route():
         # check if the post request has the file part
         if 'file' not in request.files:
             flash('No file part')
-            print('here 1')
+            # print('here 1')
             return redirect(request.url)
         file = request.files['file']
         # If the user does not select a file, the browser submits an
         # empty file without a filename.
         if file.filename == '':
             flash('No selected file')
-            print('here 2')
+            # print('here 2')
             return redirect(request.url)
         if file and allowed_file(file.filename):
             filename = secure_filename(file.filename)
             file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
             to_return = Retro_Master(filename)
-            print('here 3')
+            # print('here 3')
 
             out_file = open("processed/retro.json", "w")  
     

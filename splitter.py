@@ -135,7 +135,7 @@ def user_story_splitter(input_string):
 
 def meeting_minute_string_to_dict(meeting_minutes_text):
 
-    print("Within this function")
+    # print("Within this function")
 
     # Initialize the dictionary
     meeting_minutes_dict = {
@@ -194,7 +194,7 @@ def meeting_minute_string_to_dict(meeting_minutes_text):
         meeting_minutes_dict['minutes']['adjourned'] = adjourned_match.group(1)
 
 
-    print("Finished this function")
+    # print("Finished this function")
 
     return meeting_minutes_dict
 

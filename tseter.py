@@ -9,7 +9,7 @@ def ticket_splitter(input_string):
 
     # Print each section in the list
     for i in range(1,len(sections)-1):
-        print(sections[i])
+        # print(sections[i])
 
 
         # Split the input string into lines
@@ -20,7 +20,7 @@ def ticket_splitter(input_string):
 
         for line in lines:
 
-            print(line)
+            # print(line)
             try:
                 # Split each line into key and value using ':'
                 key, value = line.strip().split(': ')

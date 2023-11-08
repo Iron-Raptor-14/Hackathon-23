@@ -12,8 +12,8 @@ def Meeting_Master(filename):
     with open("uploads/"+filename,'r') as file:
         
         data = file.readlines()
-        print("1123535 23")
-        print(data)
+        # print("1123535 23")
+        # print(data)
 
         thread_minutes = ReturnValueThread(target=Compute_Create_Meeting_Minutes, args=(data,))
         thread_action_items = ReturnValueThread(target=Compute_Create_Action_Items, args=(data,))
@@ -37,8 +37,8 @@ def Meeting_Master(filename):
 
 def Compute_Create_Meeting_Minutes(data):
 
-    print("Before")
-    print(data)
+    # print("Before")
+    # print(data)
     completion = client.chat.completions.create(
         model="gpt-3.5-turbo-16k",
         messages=[
@@ -49,7 +49,7 @@ def Compute_Create_Meeting_Minutes(data):
             {"role": "user", "content": data}
         ]
     )    
-    print("After")
+    # print("After")
 
 
     # f = open("processed/minutes.txt", "w")
@@ -65,9 +65,9 @@ def Compute_Create_Meeting_Minutes(data):
 
     # print(completion.choices[0].message)
 
-    print(completion)
-    print("Marker")
-    print(completion.choices[0].message.content)
+    # print(completion)
+    # print("Marker")
+    # print(completion.choices[0].message.content)
     to_return = meeting_minute_string_to_dict(completion.choices[0].message.content)
     # to_return = completion.choices[0].message["content"]
 
@@ -85,7 +85,7 @@ def Compute_Create_Action_Items(data):
             {"role": "user", "content": data}
         ]
     )
-    print(completion.choices[0].message.content)
+    # print(completion.choices[0].message.content)
 
     to_return=action_splitter(completion.choices[0].message.content)
 
@@ -109,7 +109,7 @@ def Compute_Create_Next_Agenda(data):
             {"role": "user", "content": data}
         ]
     )
-    print(completion.choices[0].message.content)
+    # print(completion.choices[0].message.content)
 
     to_return = agend_to_dict(completion.choices[0].message.content)
 
@@ -118,7 +118,7 @@ def Compute_Create_Next_Agenda(data):
 
 def Agile_Master(filename):
 
-    print("I;m runngin here")
+    # print("I;m runngin here")
 
     with open("uploads/"+filename,'r') as file:
         
@@ -161,13 +161,13 @@ def Compute_Suggest_Jira_Tickets(data):
     # print(completion.choices[0].message["content"])
 
     # return ticket_splitter(completion.choices[0].message)
-    print(completion.choices[0].message.content)
+    # print(completion.choices[0].message.content)
 
     return ticket_splitter(completion.choices[0].message.content)
 
 def Compute_User_Stories(data):
 
-    print("I'm runnung here 2")
+    # print("I'm runnung here 2")
     
     completion = client.chat.completions.create(
         model="gpt-3.5-turbo-16k",
@@ -184,7 +184,7 @@ def Compute_User_Stories(data):
     # print(completion.choices[0].message["content"])
     # print("ticket splitter")
 
-    print(completion.choices[0].message.content)
+    # print(completion.choices[0].message.content)
 
     return user_story_splitter(completion.choices[0].message.content)
     # return (completion.choices[0])
@@ -219,7 +219,7 @@ def Compute_Retro_Suggestions(data):
             {"role": "user", "content": data}
         ]
     )
-    print(completion.choices[0].message.content)
+    # print(completion.choices[0].message.content)
 
     to_return = retro_splitter(completion.choices[0].message.content)
     return [value for value in to_return.values()]
@@ -238,25 +238,25 @@ def Compute_Meta(data):
             {"role": "user", "content": data}
         ]
     )
-    print(000000000000000000000000000000)
-    print(completion)
-    print(111111111111111111111111111111)
-    print(completion.choices[0].message.content)
-    print(2222222222222222222222222)
+    # print(000000000000000000000000000000)
+    # print(completion)
+    # print(111111111111111111111111111111)
+    # print(completion.choices[0].message.content)
+    # print(2222222222222222222222222)
     return split_meta_info(completion.choices[0].message.content)
 
 def Master_AI(filename,ID,meta_name,meta_type):
     with open("./meetings/"+str(ID)+'/'+filename,'r', encoding='cp1252') as f:
     
-        print(f)
+        # print(f)
         data = f.read()
-        print('-----------')
+        # print('-----------')
 
 
 
     # Meta
     thread_meta = ReturnValueThread(target=Compute_Meta, args=(data,))
-    print(thread_meta)
+    # print(thread_meta)
 
     # Meeting
     thread_minutes = ReturnValueThread(target=Compute_Create_Meeting_Minutes, args=(data,))
@@ -280,13 +280,13 @@ def Master_AI(filename,ID,meta_name,meta_type):
     # thread_story.start()
 
     thread_retro.start()
-    print('~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~')
-    print(thread_meta)
+    # print('~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~')
+    # print(thread_meta)
 
     meta_dict = thread_meta.join()
 
-    print("~~~~~~~~~")
-    print(meta_dict)
+    # print("~~~~~~~~~")
+    # print(meta_dict)
 
 
 
