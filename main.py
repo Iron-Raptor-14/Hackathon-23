@@ -1,7 +1,7 @@
 import os
 from flask import Flask, flash, request, redirect, url_for,jsonify
 from werkzeug.utils import secure_filename
-from utility import Meeting_Master,Agile_Master,Retro_Master,Master_AI
+from utilai import Meeting_Master,Agile_Master,Retro_Master,Master_AI
 from format import *
 import json
 from flask_cors import CORS, cross_origin
