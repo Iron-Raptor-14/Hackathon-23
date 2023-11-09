@@ -1,0 +1,27 @@
+Date: 13/1/2023
+ Time: 09:00 AM – 09:07 AM 
+Location: Online 
+
+09:00 AM - Bob (Scrum Master): Good morning, team! Let’s keep this brief and focused. Please share updates on your progress, today's goals, and any blockers. Alice, you're first today.
+09:01 AM - Alice (Product Owner): Good morning! Yesterday, I worked on refining the product backlog. Today, I'll be meeting with stakeholders to discuss the upcoming sprint’s priorities. No blockers.
+09:02 AM - Bob (Scrum Master): Thanks, Alice. Charlie, you're next.
+09:02 AM - Charlie (Developer): Hey everyone. I wrapped up the API integration tests yesterday. Today, I'm starting on the database optimization task, but I'm waiting on access permissions from the IT department.
+09:03 AM - Bob (Scrum Master): Alright, I'll follow up with IT right after this. Dana?
+09:03 AM - Dana (Developer): I completed the new feature module yesterday. Today, I'll be working on bug fixes reported by Eve. All clear on my end.
+09:04 AM - Bob (Scrum Master): Excellent. Eve, your update?
+09:04 AM - Eve (Quality Assurance): I finished the regression tests yesterday. Today's focus is on automating the test cases for the checkout process. No impediments.
+09:05 AM - Bob (Scrum Master): Sounds good. Frank?
+09:05 AM - Frank (UI/UX Designer): I designed the initial concept for the landing page yesterday. Today, I need to collaborate with Dana and Eve to ensure the design meets accessibility standards. So, I’ll need a bit of their time.
+09:06 AM - Dana (Developer): Happy to sync up after this.
+09:06 AM - Eve (Quality Assurance): Me too, let’s schedule it.
+09:06 AM - Bob (Scrum Master): Great teamwork. Anything else, anyone?
+09:07 AM - [Silence]
+09:07 AM - Bob (Scrum Master): Okay, then we're done for today. Let's keep the momentum going and communicate any issues as they arise. Have a great day, everyone!
+09:08 AM - [End of Stand-Up Meeting]
+
+
+
+
+
+
+

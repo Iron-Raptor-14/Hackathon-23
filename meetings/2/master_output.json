@@ -1,195 +1,221 @@
 {
       "Meta": {
             "ID": 2,
-            "title": "weekly standup",
-            "type": "Standup",
-            "date": "6/11/2023",
-            "duration": "16:38",
+            "title": "Sprint Planning B",
+            "type": "Sprint Planning",
+            "date": "8/11/2023",
+            "duration": "2 hours",
             "attendees": [
-                  "Yuen, Steven",
-                  "Hong, Jason",
-                  "Gailey, David",
-                  "Qu, Chris"
+                  "Julian (Scrum Master), Taylor (Product Owner), Petra (Network Architect), Alex (Software Developer), Don"
             ]
       },
       "Meeting": {
             "minutes": {
                   "minutes": {
-                        "date": "6/11/2023",
-                        "time": "2.30 PM",
+                        "date": "8/11/2023",
+                        "time": "10:00 AM",
                         "location": "Online",
                         "attendees": [
-                              "Steven Yuen",
-                              "Jason Hong",
-                              "Chris Qu",
-                              "David Gailey"
+                              "Julian (Scrum Master)",
+                              "Taylor (Product Owner)",
+                              "Petra (Network Architect)",
+                              "Alex (Software Developer)",
+                              "Don (Project Manager)"
                         ],
                         "agenda": [
-                              "1. Differentiating our product from Copilot",
-                              "2. Tailoring our solution towards an Agile work environment",
-                              "3. Leveraging Copilot for integration into our ecosystem",
-                              "4. Discussing the use of meeting minutes and ticket generation",
-                              "5. Designing a centralized dashboard for managing meetings"
+                              "1. Update on product backlog",
+                              "2. Discuss infrastructure setup and hardware-software integration",
+                              "3. Assign tasks for signal simulation",
+                              "4. Outline expected timeline and deliverables",
+                              "5. Address potential changes in priority",
+                              "6. Address any immediate concerns or questions"
                         ],
-                        "summary": [
-                              "1. Steven Yuen began the meeting by emphasizing the need to differentiate our solution from Copilot. He highlighted the gaps in Copilot, such as its lack of integration with Agile work environments. Steven suggested focusing on making our solution Agile-focused and tailoring it towards Telstra's needs.",
-                              "2. The discussion revolved around whether to leverage Copilot or build our own solution. Jason Hong proposed integrating Copilot into our ecosystem in the long term, but Steven expressed concerns about wasted resources if we eventually migrate to Copilot. The group acknowledged the strategic partnership with Copilot and the possibility of collaborating to integrate our solution.",
-                              "3. The group agreed that a centralized dashboard would be a valuable feature, allowing for a seamless transition between meetings and providing a consistent timeline. The need to address Telstra's specific requirements and challenges with Agile meetings was emphasized.",
-                              "4. Steven mentioned the potential value of meeting minutes and retrospectives for Telstra employees, but Chris Qu highlighted that retrospectives might not be well-received by team members. David Gailey suggested focusing on the usefulness of a centralized dashboard and improving the employee experience.",
-                              "5. Steven expressed his intention to research Agile methodologies and the design of a centralized dashboard. He requested input from the team on potential solutions and committed to balancing existing work with the new requirements."
-                        ],
-                        "actionItems": [
-                              "1. Steven will follow up to obtain requirements files.",
-                              "2. The team will reconvene for further discussion and updates on progress."
-                        ],
-                        "adjourned": "3.00 PM"
+                        "summary": [],
+                        "actionItems": [],
+                        "adjourned": "11:50 AM"
                   }
             },
             "action_items": {
-                  "Steven Yuen:": [
-                        "Research and identify features that cater to Agile work environments.",
-                        "Investigate the use of a centralized dashboard for managing meetings.",
-                        "Determine how the solution can differentiate itself from Copilot.",
-                        "Gather requirements and file from the stakeholders.",
-                        "Chase up the requirements from the stakeholders."
+                  "Taylor (Product Owner):": [
+                        "Chase up the lab access resolution for the hardware-software integration tests."
                   ],
-                  "Jason Hong:": [
-                        "Continue working on current tasks and projects.",
-                        "Discuss the issue of Copilot access and find a solution."
+                  "Petra (Network Architect):": [
+                        "Allocate time to work with Alex on the signal simulation task.",
+                        "Reach out to potential vendors for hardware selection.",
+                        "Initiate the tower procurement process."
                   ],
-                  "David Gailey:": [
-                        "Support the shift towards an Agile focus for the solution.",
-                        "Assist in identifying unique features and value proposition compared to Copilot."
+                  "Alex (Software Developer):": [
+                        "Set up the hardware-software integration tests pending confirmation of lab access.",
+                        "Take the lead on crafting the signal simulation environment.",
+                        "Draft tasks for the simulation environment and outline the design for the integration tests."
                   ],
-                  "Chris Qu:": [
-                        "Participate in discussions and provide input on the direction of the solution.",
-                        "Assist in determining the necessary features for the Telstra-focused solution."
+                  "Julian (Scrum Master):": [
+                        "Document the sprint goals and establish a timeline for deliverables.",
+                        "Address any immediate concerns or questions from the team.",
+                        "Arrange daily stand-ups to track progress."
                   ],
                   "All team members:": [
-                        "Collaborate on integrating Copilot into the solution in the long term."
+                        "Collaborate to make the sprint a success.",
+                        "Identify any risks or blockers in planning and communicate them."
                   ]
             },
             "next_agenda": {
                   "agenda": {
-                        "date": "[insert date]",
+                        "date": "DD/MM/YYYY",
                         "startTime": "",
                         "endTime": "",
-                        "location": "[insert location/online]",
+                        "location": "Online",
                         "items": [
                               {
-                                    "item": "Roll Call:",
+                                    "item": "Welcome and Introduction (5 minutes)",
                                     "detail": [
-                                          "- Check attendance and ensure all required participants are present."
+                                          "- Review the purpose of the meeting and its objectives.",
+                                          "- Remind team members of the sprint goals."
                                     ]
                               },
                               {
-                                    "item": "Recap of Previous Meeting:",
+                                    "item": "Product Backlog Update (10 minutes)",
                                     "detail": [
-                                          "- Summarize key points and decisions made during the previous meeting."
+                                          "- Taylor (Product Owner) presents an update on the product backlog."
                                     ]
                               },
                               {
-                                    "item": "Discuss Differentiating Factors:",
+                                    "item": "Infrastructure Setup (10 minutes)",
                                     "detail": [
-                                          "- Review discussion from previous meeting regarding how to differentiate our product from Copilot.",
-                                          "- Explore the idea of tailoring our solution towards an agile work environment.",
-                                          "- Discuss the potential benefits of integrating a centralized dashboard for managing meetings."
+                                          "- Petra (Network Architect) shares her suggestions and opinions on the infrastructure setup for this sprint.",
+                                          "- Discuss vendor selection for hardware needs and securing network towers for the pilot area."
                                     ]
                               },
                               {
-                                    "item": "Research Findings:",
+                                    "item": "Hardware-Software Integration Tests (10 minutes)",
                                     "detail": [
-                                          "- Present findings on agile work environments, including any relevant features or considerations for our solution.",
-                                          "- Discuss the potential value of supporting different types of meetings (such as retrospectives and ceremonies) within our solution."
+                                          "- Alex (Software Developer) provides an update on setting up the integration tests.",
+                                          "- Confirm access to the hardware labs for proceeding with the tests."
                                     ]
                               },
                               {
-                                    "item": "Roadmap and Prototyping Plans:",
+                                    "item": "Signal Simulation Task (10 minutes)",
                                     "detail": [
-                                          "- Outline the proposed roadmap for development, including any necessary changes or additions to our current features.",
-                                          "- Discuss plans for prototyping and gathering feedback from users."
+                                          "- Alex (Software Developer) takes the lead on the signal simulation task.",
+                                          "- Discuss the need for support and collaboration from Petra."
                                     ]
                               },
                               {
-                                    "item": "Action Items:",
+                                    "item": "Timeline and Deliverables (10 minutes)",
                                     "detail": [
-                                          "- Assign tasks and responsibilities to team members based on the discussed roadmap.",
-                                          "- Set deadlines and milestones for completing tasks."
+                                          "- Taylor (Product Owner) outlines the expected timeline for the deliverables.",
+                                          "- Discuss the importance of tangible progress for the upcoming stakeholder meeting."
                                     ]
                               },
                               {
-                                    "item": "Next Steps and Follow-Up:",
+                                    "item": "Task Breakdown and Effort Estimates (20 minutes)",
                                     "detail": [
-                                          "- Determine the date and time for the next meeting.",
-                                          "- Clarify any outstanding questions or concerns."
+                                          "- Petra (Network Architect) breaks down tasks and provides effort estimates for hardware vendor selection and tower procurement.",
+                                          "- Alex (Software Developer) does the same for the simulation environment and integration tests."
+                                    ]
+                              },
+                              {
+                                    "item": "Priority Changes and User Story Refinement (10 minutes)",
+                                    "detail": [
+                                          "- Taylor (Product Owner) communicates any potential changes in priority and informs the team of updates from stakeholders.",
+                                          "- Discuss the refinement of user stories in the backlog."
+                                    ]
+                              },
+                              {
+                                    "item": "Roundtable Discussion (15 minutes)",
+                                    "detail": [
+                                          "- Each team member briefly shares concerns, questions, or immediate thoughts.",
+                                          "- Petra, Alex, and Taylor provide final updates before concluding the meeting.",
+                                          "10. Conclusion and Next Steps (5 minutes)",
+                                          "- Julian (Scrum Master) wraps up the meeting and expresses appreciation for everyone's contributions.",
+                                          "- Summarize key decisions made during the session.",
+                                          "- Remind team members to have a productive sprint and attend daily stand-ups."
                                     ]
                               }
                         ],
-                        "agenda for next meeting": "",
-                        "start time": "[insert time]",
-                        "end time": "[insert time]",
-                        "note": "This agenda is subject to revision and may be updated prior to the meeting."
+                        "time": "10:00 AM - 12:00 PM",
+                        "- discuss the three critical items": "6G signal simulation, base network infrastructure setup, and finalizing network protocol standards.",
+                        "note": "The agenda timing can be adjusted according to the actual meeting duration and specific team needs."
                   }
             }
       },
       "Jira": {
             "jira_tickets": [
                   {
-                        "title": "Agile Work Environment Integration",
-                        "description": "Investigate and implement features to align the solution with Telstra's agile work environment, such as support for different types of agile meetings and ceremonies.",
-                        "assignee": "Steven Yuen",
-                        "acceptanceCriteria": "The solution should provide features that are tailored to agile work practices and support different types of agile meetings. It should integrate seamlessly with Telstra's existing agile tools and workflows.",
-                        "estimate": "2 days",
+                        "title": "6G Network Rollout - Sprint Planning",
+                        "description": "Plan and assign tasks for the rollout of the 6G network, including tasks related to signal simulation, infrastructure setup, and network protocol standards.",
+                        "assignee": "Julian (Scrum Master)",
+                        "acceptanceCriteria": "Sprint goals and individual tasks are documented and assigned. Effort estimates and potential risks/blockers are identified.",
+                        "estimate": "1 day",
                         "priority": "High",
-                        "userStory": "As a project manager, I want a central dashboard to integrate all agile meetings and provide a consistent timeline so that I can easily track and manage all project activities."
+                        "userStory": "As a team member, I want a clear plan and assigned tasks for the 6G network rollout, so that I can effectively contribute to the project."
                   },
                   {
-                        "title": "Contextual Output Generation",
-                        "description": "Develop functionality to use the transcripts of past meetings as context to generate more accurate and valuable output for future meetings.",
-                        "assignee": "Steven Yuen",
-                        "acceptanceCriteria": "The solution should analyze past meeting transcripts and use the context to generate meeting outputs that are tailored to the specific meeting type. The generated output should provide valuable insights and recommendations based on the accumulated knowledge from past meetings.",
-                        "estimate": "4 days",
-                        "priority": "Medium",
-                        "userStory": "As a team member, I want an AI-powered solution that generates meeting minutes tailored for agile ceremonies, such as retros, stand-ups, and planning sessions, so that I can have a clear record of discussions and action items."
-                  },
-                  {
-                        "title": "Centralized Dashboard",
-                        "description": "Create a centralized dashboard to manage and track all meetings and their associated artifacts, providing a seamless experience for users.",
-                        "assignee": "Steven Yuen",
-                        "acceptanceCriteria": "The dashboard should allow users to easily schedule, manage, and track meetings. It should provide visibility into meeting details, attendees, agenda, and generated outputs. The dashboard should also support integration with Telstra's existing tools and systems.",
+                        "title": "Hardware Vendor Selection",
+                        "description": "Research, evaluate, and select hardware vendors for the 6G network infrastructure.",
+                        "assignee": "Petra (Network Architect)",
+                        "acceptanceCriteria": "Criteria for vendor selection are defined. Potential vendors are researched and evaluated based on the criteria. A recommendation for hardware vendors is provided.",
                         "estimate": "2 days",
                         "priority": "Medium",
-                        "userStory": "As a Telstra executive, I want a solution that provides a transcript of agile meetings and generates reports based on the meeting content so that I can gain insights and make informed decisions."
+                        "userStory": "As a Network Architect, I want to choose the right hardware vendors for the 6G network infrastructure, so that we can ensure compatibility and reliability."
                   },
                   {
-                        "title": "Copilot Integration and Customization",
-                        "description": "Explore the possibility of integrating Telstra's solution with Copilot, tailoring it to meet specific business needs and leveraging the existing platform.",
-                        "assignee": "Jason Hong",
-                        "acceptanceCriteria": "The integration with Copilot should allow Telstra's solution to complement and enhance the functionalities provided by Copilot. The integration should be seamless and provide added value to Telstra's users. Customization options should be explored to align with Telstra's unique requirements.",
-                        "estimate": "4 days",
+                        "title": "Network Tower Procurement",
+                        "description": "Initiate the process of procuring network towers for the pilot area of the 6G network.",
+                        "assignee": "Petra (Network Architect)",
+                        "acceptanceCriteria": "The requirements for network towers are defined. Procurement processes are initiated, including contacting potential vendors or providers.",
+                        "estimate": "1 day",
                         "priority": "Medium",
-                        "userStory": "As a user of an agile work environment, I want a solution that automates repetitive administrative tasks, such as generating tickets and updating progress, so that I can focus more on actual work."
+                        "userStory": "As a Network Architect, I want to start the procurement process for network towers, so that we can have the necessary infrastructure for the 6G network pilot."
                   },
                   {
-                        "title": "Meeting Minutes Tailoring",
-                        "description": "Modify the meeting minutes feature to align with different meeting types, such as retros, stand-ups, and ceremonies, to provide more relevant and useful outputs.",
-                        "assignee": "Chris Qu",
-                        "acceptanceCriteria": "The meeting minutes feature should be enhanced to adapt to different meeting types and generate meeting summaries that are tailored to the specific purpose of the meeting. The tailored meeting minutes should provide key highlights, action items, and insights based on the discussions and outcomes of each meeting type.",
+                        "title": "Simulation Environment Design",
+                        "description": "Design a detailed simulation environment for testing various scenarios of the 6G network signal.",
+                        "assignee": "Alex (Software Developer)",
+                        "acceptanceCriteria": "The simulation environment design is documented, including the required components and inputs. The design aligns with the project requirements and objectives.",
                         "estimate": "3 days",
+                        "priority": "High",
+                        "userStory": "As a Software Developer, I want to create a realistic simulation environment for testing the 6G network signal, so that we can assess its performance and make improvements."
+                  },
+                  {
+                        "title": "Integration Test Design",
+                        "description": "Outline the design of integration tests that ensure hardware-software alignment for the 6G network.",
+                        "assignee": "Alex (Software Developer)",
+                        "acceptanceCriteria": "The integration test design is documented, including the test cases, inputs, and expected outputs. The design considers the hardware and software components being tested.",
+                        "estimate": "2 days",
+                        "priority": "Medium",
+                        "userStory": "As a Software Developer, I want to outline integration tests for the 6G network, so that we can verify the compatibility and functioning of different system components."
+                  },
+                  {
+                        "title": "Sprint Review Preparation",
+                        "description": "Prepare for the stakeholder meeting in four weeks, ensuring significant progress is visible during the sprint review.",
+                        "assignee": "Julian (Scrum Master)",
+                        "acceptanceCriteria": "Milestones and deliverables for the sprint review are defined. Progress tracking mechanisms are put in place to ensure visibility and effective communication with stakeholders.",
+                        "estimate": "1 day",
+                        "priority": "Medium",
+                        "userStory": "As a Scrum Master, I want to prepare for the sprint review so that we can showcase the progress made towards the 6G network rollout."
+                  },
+                  {
+                        "title": "Backlog Refinement",
+                        "description": "Refine user stories in the backlog, ensuring they are ready for the team to work on.",
+                        "assignee": "Taylor (Product Owner)",
+                        "acceptanceCriteria": "User stories in the backlog are reviewed and refined, including breaking them down into smaller, actionable tasks. They are updated with clear acceptance criteria.",
+                        "estimate": "1 day",
                         "priority": "Low",
-                        "userStory": "As a Telstra employee, I want a cost-effective agile project management tool that offers similar features as Copilot but can be tailored specifically for Telstra's needs, so that we can save costs without compromising functionality."
+                        "userStory": "As a Product Owner, I want to refine the backlog user stories to ensure they are well-defined and ready for the team to work on."
                   }
             ]
       },
       "Retro": {
             "retro_actions": [
-                  "Differentiate our product with an Agile focus: Tailor our solution towards an Agile work environment, since this is something that the current copilot solution lacks. This can include features that reduce time-consuming administrative tasks and cater specifically to Agile ceremonies such as retrospectives and stand-ups.",
-                  "Make the most out of the context window: Ensure that our solution can accumulate knowledge from past meetings and use it to provide valuable insights. This can involve improving the meeting generator to take into account the purpose of the meeting (retro, stand-up, ceremony) and adjust the output accordingly.",
-                  "Create a centralized dashboard: Differentiate our product by developing a central dashboard that allows users to manage and track all their meetings and associated tasks. This will add value by providing a centralized and streamlined experience, which is currently lacking in the copilot solution.",
-                  "Integrate with copilot in the long term: While access to copilot is currently limited, we can consider integrating our solution with copilot in the future. This will require collaboration and co-development with Microsoft, leveraging our strategic partnership, and allowing for a more seamless experience for users.",
-                  "Investigate Telstra-specific needs: Research and analyze Telstra's Agile work environment and identify any specific requirements and pain points that can be addressed by our solution. This will enable us to create a product that is tailored to Telstra's needs and provides a unique value proposition.",
-                  "Gather requirements: Chase up the requirements from the product stakeholders, such as the business and executive teams, to ensure that their needs are considered in the development of the solution."
+                  "Improve hardware lab access: Initiate a discussion and follow-up with the necessary stakeholders to ensure timely access to the hardware labs for integration tests. This will prevent delays in the sprint and allow for efficient testing.",
+                  "Update user stories: Product Owner Taylor should review and refine the user stories in the backlog to ensure they are well-defined and ready for the team. This will streamline the development process and provide clear goals for the sprint.",
+                  "Monitor stakeholder updates: Product Owner Taylor should regularly communicate with stakeholders and keep the team updated on any potential changes in priorities. This will ensure that the team can adapt and adjust their plans accordingly.",
+                  "Break down tasks and estimate efforts: Network Architect Petra and Software Developer Alex should break down their tasks and provide effort estimates for the signal simulation and infrastructure setup. This will help the team better understand the scope of work and allocate resources effectively.",
+                  "Collaborate on signal simulation: Network Architect Petra and Software Developer Alex should align their schedules and collaborate closely on the signal simulation task. Regular communication and coordination will ensure a successful outcome.",
+                  "Keep an eye on the timeline: Scrum Master Julian should monitor the progress of the deliverables and ensure that the team stays on track to meet the four-week deadline for the stakeholder meeting. This will help manage expectations and address any potential delays or risks.",
+                  "Address immediate concerns: Before concluding the planning session, Scrum Master Julian should provide an opportunity for each team member to raise any immediate concerns or questions. This will foster open communication and ensure that everyone's needs are addressed."
             ]
       },
-      "transcript": "Meeting Date: 6/11/2023\nMeeting Start Time: 2.30 PM\nEnd Time: 3.00 PM\nMeeting Location: Online\n\n00:00:00.000 --> 00:00:06.760\n<v Yuen, Steven>Oh, it was a it's quick, quick, quick meeting anyways. Essentially it went through copilot, I mean like.</v>\n\n00:00:08.330 --> 00:00:09.410\n<v Yuen, Steven>It's kinda like.</v>\n\n00:00:12.060 --> 00:00:13.860\n<v Yuen, Steven>It there's a lot of overlap.</v>\n\n00:00:15.150 --> 00:00:44.110\n<v Yuen, Steven>Between what we're producing right now and what they have, right, so we need to figure out a way to distinguish ourself, right. And I guess there's a couple of gaps that they don't really address. The first one is they they don't really, they're not really tied it towards an agile work environment, which Telstra is, right. So that can be one way we differentiate ourselves, right, which is focusing on the agile.</v>\n\n00:00:45.170 --> 00:00:45.970\n<v Yuen, Steven>Work environment, right?</v>\n\n00:00:48.250 --> 00:00:51.730\n<v Yuen, Steven>And the second thing is seems like.</v>\n\n00:00:53.240 --> 00:00:53.400\n<v Hong, Jason>Yeah.</v>\n\n00:00:52.650 --> 00:01:00.890\n<v Yuen, Steven>Conversations are like one off like say you have multiple meetings related to each other, right?</v>\n\n00:01:02.690 --> 00:01:05.130\n<v Yuen, Steven>That AI may not directly.</v>\n\n00:01:07.130 --> 00:01:24.210\n<v Yuen, Steven>You know, use all the contents, all the transcripts of all those meetings as context to produce an art, like an output. So those are two ways I see that we differentiate ourselves, right? We say that, OK, no, there's a third way. Sorry. But the 2nd way is.</v>\n\n00:01:25.120 --> 00:01:32.680\n<v Yuen, Steven>Regards the context is that we can say, OK, we we make sure we use use up that context window so that we.</v>\n\n00:01:34.200 --> 00:01:37.160\n<v Yuen, Steven>Essentially, our solution is able to.</v>\n\n00:01:38.540 --> 00:01:51.140\n<v Yuen, Steven>Our solution is able to accumulate low knowledge from past meetings. Right now, the third differentiate differentiating factor is that our solution is like a lot cheaper, right?</v>\n\n00:01:53.220 --> 00:02:02.260\n<v Yuen, Steven>I haven't done a pair head calculation yet, but what they have is theirs is 30 USD per person per month.</v>\n\n00:02:04.460 --> 00:02:09.940\n<v Yuen, Steven>And I think that comes comes around about two what 5.4 million.</v>\n\n00:02:11.430 --> 00:02:29.630\n<v Yuen, Steven>Her USD per person, I mean 5.4 million USD per like per year for the company, right? Yeah. So I'll also be cheaper, but then else doesn't have as much as many features as they have 'cause Mez isn't just meeting an agenda setting. We've got other **** in there.</v>\n\n00:02:31.160 --> 00:02:36.440\n<v Yuen, Steven>So I think the first and second points, which is the agile and the.</v>\n\n00:02:37.760 --> 00:02:44.360\n<v Yuen, Steven>Making the most out of the context window would probably be the way for us to differentiate our product from what they have.</v>\n\n00:02:45.740 --> 00:02:45.900\n<v Yuen, Steven>Kids.</v>\n\n00:02:44.820 --> 00:02:50.140\n<v Hong, Jason>Or can we just leverage copilot and to to make it more?</v>\n\n00:02:50.460 --> 00:02:53.340\n<v Hong, Jason>To to tailor it to what we need.</v>\n\n00:02:53.660 --> 00:02:54.380\n<v Hong, Jason>Instead of competing.</v>\n\n00:02:56.780 --> 00:02:58.340\n<v Yuen, Steven>Copilot is.</v>\n\n00:02:56.740 --> 00:03:02.260\n<v Hong, Jason>Well, we have this strategic partnership, right? So why can't we?</v>\n\n00:03:01.450 --> 00:03:20.810\n<v Yuen, Steven>No, no. What we can do is that we can, we'll make our own agile like focused one, right, just for us and then we will say we will code develop it to integrate our solution into pilots. Copilot's solution that's how like long term plan before now it's a separate instance.</v>\n\n00:03:21.420 --> 00:03:22.220\n<v Hong, Jason>Then.</v>\n\n00:03:23.500 --> 00:03:29.300\n<v Hong, Jason>Would if you have the plan, I I don't know how much detail they're gonna think of this, but.</v>\n\n00:03:30.660 --> 00:03:33.340\n<v Hong, Jason>I'm just thinking logically, if you have the plan to eventually.</v>\n\n00:03:36.060 --> 00:04:06.380\n<v Hong, Jason>Codevelop and integrate copilot into your ecosystem, but then you're expanding resources to also create your own. So eventually when you move to copilot, the foundation you've built because like you wanted to kind of do that trial run. It wasn't that awful. Nothing. If you eventually migrate like because it's the same kind of solution anyways, the transcription feature of the the order meeting generator, things like that.</v>\n\n00:04:07.910 --> 00:04:09.230\n<v Hong, Jason>Wouldn't that be wasted?</v>\n\n00:04:12.070 --> 00:04:12.750\n<v Yuen, Steven>Yeah.</v>\n\n00:04:13.640 --> 00:04:14.480\n<v Hong, Jason>That's the problem.</v>\n\n00:04:15.190 --> 00:04:21.950\n<v Yuen, Steven>Yeah, yeah, it it it. But you know, I guess telsha's not very well known for.</v>\n\n00:04:23.390 --> 00:04:25.150\n<v Yuen, Steven>Yeah, you're right, it will be wasted.</v>\n\n00:04:26.630 --> 00:04:26.750\n<v Hong, Jason>So.</v>\n\n00:04:31.470 --> 00:04:32.990\n<v Hong, Jason>What? What, what what?</v>\n\n00:04:34.040 --> 00:04:34.280\n<v Hong, Jason>Oh.</v>\n\n00:04:26.630 --> 00:04:35.310\n<v Yuen, Steven>I mean, but it it's you can think of it as a necessary evil to to prove our point, right? Because without that, we can't. We we can't do the agile thing.</v>\n\n00:04:36.310 --> 00:04:40.390\n<v Hong, Jason>What's wrong with just using?</v>\n\n00:04:41.860 --> 00:04:46.540\n<v Hong, Jason>Copilot initially and then we use it because the copilot.</v>\n\n00:04:45.430 --> 00:04:57.590\n<v Yuen, Steven>Because 'cause copilots essentially an end to end solution already, right? Like we can't really add it, it's hard for us to add value to it whilst using.</v>\n\n00:04:59.430 --> 00:05:17.870\n<v Yuen, Steven>But that's the first thing. Second thing is this limited access to copilot? Right now I don't have access. It's hard to get access only like only a couple of people. Maybe 200 different companies like selected people across 200 different companies have access to pilot, so we can't leverage it right now.</v>\n\n00:05:19.650 --> 00:05:19.850\n<v Hong, Jason>But.</v>\n\n00:05:23.070 --> 00:05:31.430\n<v Yuen, Steven>I mean I I think I understand what you mean about leveraging copilot thing that into our solution. Maybe. Yeah, you're right. Maybe we can do that. But.</v>\n\n00:05:31.390 --> 00:05:38.670\n<v Hong, Jason>I'm just cause like I'm just thinking what the brief is the the the thing brief.</v>\n\n00:05:39.780 --> 00:05:39.900\n<v Yuen, Steven>Hmm.</v>\n\n00:05:40.430 --> 00:05:58.550\n<v Hong, Jason>It is it. It's just saying how can we use Gen AI like I can't remember the specifics, right? But from memory I remember it saying something along the lines of how can we use generated AI to improve employee experience and it doesn't really.</v>\n\n00:05:59.910 --> 00:06:13.910\n<v Hong, Jason>That doesn't really necessarily mean we have to create from scratch, right? That means we can leverage existing platform. I I don't know, I'm just interpreting what the theme says, right. I think if the theme is like.</v>\n\n00:06:15.230 --> 00:06:41.190\n<v Hong, Jason>Masking theme then it's more of like a build, but this one's more like. I don't know that like I'm thinking of. Yeah, just more of an integrate. But then there's obvious evident gaps within Co pilot that wouldn't really work with Telstra's ecosystem in Telstra where, where, where, where agile, we have a lot of recurring meetings, employee experiences hindered as a result because there's a lot of like.</v>\n\n00:06:41.820 --> 00:06:55.740\n<v Hong, Jason>Things to do but Co pilot already has the infrastructure. We have a strategic partnership, we leverage that. But then also make a Telstra fight through like at filling in the blank. I don't I don't know that that's kind of how.</v>\n\n00:06:58.220 --> 00:07:03.660\n<v Hong, Jason>My line of thinking 'cause it's still using generated AI cause copilot is Gen AI.</v>\n\n00:07:05.420 --> 00:07:07.820\n<v Hong, Jason>And employee experience is the Telstra component.</v>\n\n00:07:09.560 --> 00:07:10.640\n<v Hong, Jason>Telstra employees feel happy.</v>\n\n00:07:12.100 --> 00:07:14.540\n<v Hong, Jason>But yeah, I don't know.</v>\n\n00:07:16.460 --> 00:07:21.580\n<v Yuen, Steven>Yeah, but The thing is, we can't. We can't access copilot right now. We can't really create anything to show.</v>\n\n00:07:23.690 --> 00:07:25.330\n<v Hong, Jason>But then what? What's?</v>\n\n00:07:27.000 --> 00:07:31.200\n<v Hong, Jason>Expectation timeline is it like now or is it like?</v>\n\n00:07:31.720 --> 00:07:36.000\n<v Yuen, Steven>I mean they, they they probably want something that looks like it kinda works by by first day, right?</v>\n\n00:07:37.210 --> 00:07:38.130\n<v Yuen, Steven>So as I.</v>\n\n00:07:37.290 --> 00:07:42.850\n<v Hong, Jason>Oh no, I meant I meant, yeah, sorry. I I meant like, obviously for our prototype.</v>\n\n00:07:41.800 --> 00:07:44.080\n<v Yuen, Steven>Long term, plus less strategic.</v>\n\n00:07:45.850 --> 00:07:46.250\n<v Yuen, Steven>Like it?</v>\n\n00:07:45.040 --> 00:07:48.760\n<v Hong, Jason>Yeah. Like obviously for our prototype, we do our own thing, but then?</v>\n\n00:07:51.850 --> 00:07:53.210\n<v Hong, Jason>Yeah, OK. Yeah.</v>\n\n00:07:52.910 --> 00:08:14.670\n<v Yuen, Steven>But like like we can say like I don't know I need to do more. I'm gonna do more research on the agile umm way of working but I don't 'cause I haven't worked in that environment before, but I'm guessing agile has like a lot of like time consuming administrative tasks and all that. Maybe we can tailor our solution towards reducing those times.</v>\n\n00:08:16.740 --> 00:08:20.260\n<v Gailey, David>There's a lot of ceremonies which have a lot of things you have to go through.</v>\n\n00:08:21.700 --> 00:08:24.820\n<v Gailey, David>So adjust it could be good and could make it Telstra focused.</v>\n\n00:08:26.560 --> 00:08:28.880\n<v Gailey, David>Say copilot isn't necessarily.</v>\n\n00:08:31.180 --> 00:08:48.260\n<v Yuen, Steven>Yeah, like maybe a date. Yeah. I think Sean was mentioning, like, oh, like, what's the meeting generator was to take into account, is what that meeting is for. Is it a retro? Is it a stand up? Is it a ceremony and adjust the output for that.</v>\n\n00:08:50.150 --> 00:09:06.830\n<v Yuen, Steven>Because if we like we, we need to do this is the we've gotta steer our ship like towards like that this way. Otherwise we're just. There's just gonna be like, hey, we're copilot. Kind of does the same thing except it's more integrated. It's more seamless. So. So what's the? What's the value out of your solution, right.</v>\n\n00:09:08.170 --> 00:09:32.570\n<v Yuen, Steven>That's fine. And and yeah. So so like, sure we can probably like sign our own thing and tailor it for Telstra. And then after that like thinking long term, right we can we can Co develop, collaborate and integrate with whatever Microsoft has like it doesn't have to be a solid plan but it has to be something that's kind of sounds reasonable. I mean of course there's going to be flaws but like it's.</v>\n\n00:09:33.770 --> 00:09:34.810\n<v Yuen, Steven>It is what it is.</v>\n\n00:09:39.120 --> 00:09:39.680\n<v Yuen, Steven>Yeah.</v>\n\n00:09:33.840 --> 00:09:41.480\n<v Hong, Jason>Sorry guys, I'm gonna drop off, but I'm. I'm happy to talk later. Just let me know. Yeah, you guys discuss all right.</v>\n\n00:09:41.220 --> 00:09:44.260\n<v Yuen, Steven>Yeah. Yeah, right. Sure. You drop off then.</v>\n\n00:09:44.480 --> 00:09:47.720\n<v Hong, Jason>Yeah. Yeah, we can call later if you. If we need. Yeah, but.</v>\n\n00:09:50.060 --> 00:10:08.820\n<v Yuen, Steven>So David, Chris, it's like, do you guys think think it's a good idea is that we we make like our problem essentially like Telstra and Agile focused rather than just meeting minutes and just meetings, so more tailored towards Telstra because otherwise we're gonna we're not gonna be able to differentiate ourselves.</v>\n\n00:10:10.090 --> 00:10:19.210\n<v Gailey, David>Yeah. I mean, I think still include those features because they're good and they're easy to demo. But yeah, push it towards the agile focus because that gives it something of a unique setting point.</v>\n\n00:10:20.530 --> 00:10:23.530\n<v Gailey, David>But I I think you and Jason need to sort out that.</v>\n\n00:10:25.910 --> 00:10:27.230\n<v Gailey, David>Copilots question.</v>\n\n00:10:31.220 --> 00:10:31.620\n<v Yuen, Steven>Yeah.</v>\n\n00:10:28.800 --> 00:10:35.960\n<v Gailey, David>'Cause it we need to be prepared for that one. But I think as a general rule a shift towards agile is quite reasonable.</v>\n\n00:10:37.720 --> 00:10:40.160\n<v Yuen, Steven>You're right. But what do you think, Chris?</v>\n\n00:10:40.860 --> 00:10:46.700\n<v Qu, Chris>Yeah, I think that's good. But like, are we going to then make like the ticket generation like our main thing then?</v>\n\n00:10:49.250 --> 00:11:00.210\n<v Yuen, Steven>Not too sure if I need a research more on agile. I think. How about like us, I'll spend some time today and I'll I'll figure out what kind of features we we kind of need.</v>\n\n00:11:02.500 --> 00:11:07.740\n<v Yuen, Steven>Uh, But yeah, based off our previous discussion, yeah, probably ticket generation will be a big part of it.</v>\n\n00:11:11.750 --> 00:11:11.870\n<v Yuen, Steven>Hmm.</v>\n\n00:11:09.600 --> 00:11:23.520\n<v Qu, Chris>So with the copilot stuff now like, are we, like gonna just, like, do a brief mention about what we had originally, like the meeting minutes? Stuff like, is that just gonna get scrapped or are we still keeping you?</v>\n\n00:11:27.620 --> 00:11:27.820\n<v Qu, Chris>Mm hmm.</v>\n\n00:11:23.700 --> 00:11:36.940\n<v Yuen, Steven>I think meeting minutes will be part of it, right? 'cause like even in. OK, I'm kinda guessing what agile is like right now. There's different types of agile meetings, right? You've got Retros you've got.</v>\n\n00:11:41.060 --> 00:11:41.300\n<v Gailey, David>Yeah.</v>\n\n00:11:38.520 --> 00:11:50.360\n<v Yuen, Steven>Ceremonies and all that stuff. Right. And so it'll be nice if those meeting minutes were tailored towards that rather than just. It's a meeting minute, right. Do you understand what I mean?</v>\n\n00:11:52.180 --> 00:12:07.780\n<v Qu, Chris>Umm with agile like daily standups, you don't really need minutes on what like my experience so I guess it would just 'cause like at least for the teams I was in like we'd never had minutes for any of the agile stuff.</v>\n\n00:12:08.660 --> 00:12:10.940\n<v Gailey, David>No, you just update your tickets basically.</v>\n\n00:12:11.260 --> 00:12:11.940\n<v Qu, Chris>Yeah, yeah.</v>\n\n00:12:14.000 --> 00:12:18.720\n<v Yuen, Steven>What about? What about the ever stop the retros? The ceremonies?</v>\n\n00:12:17.780 --> 00:12:21.860\n<v Qu, Chris>I'll be honest to me like Retros was always pretty useless.</v>\n\n00:12:26.540 --> 00:12:35.180\n<v Qu, Chris>I guess like from the business point of view, they would love it. 'cause they wanna, you know, push that stuff. So I think it would still be good, but.</v>\n\n00:12:36.800 --> 00:12:41.360\n<v Qu, Chris>Like the people who actually use it, I think, though, think it's kind of like, yeah, whatever.</v>\n\n00:12:44.990 --> 00:12:55.590\n<v Yuen, Steven>You know, Retro is right. I'm guessing what happens is that you look over what you did and then you figure like you kinda say, oh, this is what we did. This is what we could have done better. Like is that is that what what kinda happens?</v>\n\n00:12:57.190 --> 00:12:57.550\n<v Yuen, Steven>Like.</v>\n\n00:12:55.770 --> 00:13:00.290\n<v Qu, Chris>Yeah, yeah. But things like people don't talk in retrospect.</v>\n\n00:13:01.300 --> 00:13:02.940\n<v Yuen, Steven>Yeah, we don't talk.</v>\n\n00:13:05.390 --> 00:13:10.670\n<v Yuen, Steven>That's fine. All. I don't know. I don't know what what an executive would think like, do they?</v>\n\n00:13:12.100 --> 00:13:15.060\n<v Yuen, Steven>Do they know that? Like what if we go off?</v>\n\n00:13:16.960 --> 00:13:22.760\n<v Yuen, Steven>As a result of this retro, we now have like a supporting document that has been Odo generated.</v>\n\n00:13:24.380 --> 00:13:27.660\n<v Yuen, Steven>Would that be helpful, at least from the business like an execs point of view?</v>\n\n00:13:31.440 --> 00:13:32.360\n<v Qu, Chris>So probably.</v>\n\n00:13:35.520 --> 00:13:42.160\n<v Yuen, Steven>We're like, what other ideas do you guys have like to solve this problem that essentially copilot?</v>\n\n00:13:45.080 --> 00:13:48.320\n<v Yuen, Steven>Kinda overlap with a lot of the things that we were originally doing.</v>\n\n00:13:53.580 --> 00:14:08.180\n<v Gailey, David>Perhaps. I also think that like having that unique or that that tool that dashboard to manage everything is useful, better keep track of everything and to go to like have one meeting flow into the next. So you can build up a consistent timeline.</v>\n\n00:14:09.450 --> 00:14:10.210\n<v Gailey, David>That's useful.</v>\n\n00:14:09.550 --> 00:14:12.830\n<v Yuen, Steven>That's something I that's a really good point, David.</v>\n\n00:14:14.410 --> 00:14:29.370\n<v Yuen, Steven>Clymis have access to copilot right now. No one knows how. How how well it is. It's very limited in terms of feedback, but I don't think I saw that. They have, like a centralised dashboard or anything. It's all just integrated, right? It's.</v>\n\n00:14:30.990 --> 00:14:37.990\n<v Yuen, Steven>It's integrated, but it does number central dashboard and that's that point of centralization would be a really good differentiating factor.</v>\n\n00:14:39.300 --> 00:14:58.580\n<v Yuen, Steven>Look, I'll, I'll take a look at what? What we can, what we can grab from agile and also the dashboard and all that stuff and then I'll see how we can differentiate ourselves if we can differentiate ourselves and that way of differentiation provides values to our users then that is how we will answer the Co pilot question.</v>\n\n00:15:00.620 --> 00:15:01.780\n<v Qu, Chris>Yeah, sounds good.</v>\n\n00:15:03.680 --> 00:15:15.360\n<v Yuen, Steven>Yeah. Alright, I'll, I'll, I'll get. I'll get started on this. I'll try to balance like the work and all that stuff, but hopefully I'll get back to you guys sometime soon.</v>\n\n00:15:18.300 --> 00:15:19.140\n<v Qu, Chris>Hello. Hello.</v>\n\n00:15:21.640 --> 00:15:22.720\n<v Qu, Chris>Oh yeah, yeah, I was gonna.</v>\n\n00:15:16.770 --> 00:15:23.130\n<v Yuen, Steven>But I'll I'll say continue working on what what we do right now, because we can probably rework it for whatever we need it for.</v>\n\n00:15:24.800 --> 00:15:25.280\n<v Yuen, Steven>Sorry.</v>\n\n00:15:31.820 --> 00:15:38.700\n<v Yuen, Steven>Oh. Oh, maybe. Maybe Chris got pulled into something else to to talk someone else to talk to in the mean in the office.</v>\n\n00:15:41.020 --> 00:15:41.420\n<v Yuen, Steven>Alright.</v>\n\n00:15:43.240 --> 00:15:43.640\n<v Gailey, David>OK.</v>\n\n00:15:44.440 --> 00:15:59.400\n<v Yuen, Steven>But yeah, my main point is I guess for you guys, maybe keep on going at it, whatever you guys are doing, we can probably figure out a way to rework it and it's probably a good idea to get some experience on that. So you can answer questions if need be.</v>\n\n00:16:00.720 --> 00:16:01.600\n<v Gailey, David>Yep, OK.</v>\n\n00:16:06.260 --> 00:16:09.500\n<v Yuen, Steven>Yeah, alright. I think we'll end it at this then.</v>\n\n00:16:10.940 --> 00:16:18.820\n<v Yuen, Steven>Hey sorry did anyone get around free like requirements requirements like file or anything like that.</v>\n\n00:16:21.320 --> 00:16:22.440\n<v Gailey, David>No, I don't think so.</v>\n\n00:16:23.720 --> 00:16:25.080\n<v Yuen, Steven>Uh, I'll go chase them up.</v>\n\n00:16:27.200 --> 00:16:30.160\n<v Yuen, Steven>Alright, cheers. Talk to you soon. Bye.</v>\n\n00:16:28.800 --> 00:16:30.720\n<v Gailey, David>Alright, cool. See you. Bye.</v>\n"
+      "transcript": "Date: 8/11/2023\nTime: 10:00 AM  12:00 PM \nLocation: Online\n\n10:00 AM - Julian (Scrum Master): Good morning, everyone. Welcome to our sprint planning session. Today, we'll carve out our sprint goals and assign tasks for the rollout of our 6G network. Lets start by getting an update on our product backlog from Taylor.\n10:05 AM - Taylor (Product Owner): Hello all. Focusing on our priorities, we have three critical items: the 6G signal simulation, the setup of our base network infrastructure, and finalizing our network protocol standards. These are ambitious targets, but they're essential milestones for us.\n10:10 AM - Julian (Scrum Master): Thanks, Taylor. Petra, as our Network Architect, what's your take on the infrastructure setup we can aim for in this sprint?\n10:15 AM - Petra (Network Architect): Well, it's quite a complex task. For this sprint, I suggest we target the vendor selection for our hardware needs and secure the network towers for our pilot area. Alex, your input will be crucial here to ensure hardware and software alignment.\n10:20 AM - Alex (Software Developer): Understood, Petra. I'll focus on setting up the hardware-software integration tests. Just need to confirm access to the hardware labs so we can proceed with those tests.\n10:25 AM - Taylor (Product Owner): The lab access is in process. I'm pushing for a resolution by this week.\n10:30 AM - Julian (Scrum Master): Let's keep a close watch on that. In the meantime, Alex, well pencil in the integration tests, pending confirmation. Now, regarding the signal simulation task, who will spearhead that?\n10:35 AM - Alex (Software Developer): Ill take the lead on the signal simulation. It involves crafting a detailed simulation environment to test various scenarios. I might need some support as it's a substantial piece of work.\n10:40 AM - Julian (Scrum Master): Petra, could you allocate time to work with Alex on this?\n10:45 AM - Petra (Network Architect): Certainly, I can contribute the technical specifications for the simulation. We'll align our schedules to collaborate on this.\n10:50 AM - Julian (Scrum Master): Excellent. Don, can you outline the expected timeline for these deliverables?\n10:55 AM - Taylor (Product Owner): There's a stakeholder meeting scheduled in four weeks. We need to have tangible progress by then, especially for the sprint review. Our work now should set us up with a definitive infrastructure plan and an operational signal simulation.\n11:00 AM - Julian (Scrum Master): Noted. Let's document our goals and establish a timeline. Petra, Alex, please break down your tasks and provide effort estimates.\n11:10 AM - Petra (Network Architect): Will do. I'll get started on the criteria for selecting hardware vendors and initiate the tower procurement process.\n11:15 AM - Alex (Software Developer): I'll draft the tasks for the simulation environment and outline the design for the integration tests.\n11:20 AM - Julian (Scrum Master): Great. Remember to identify any risks or blockers in your planning. Taylor, any potential changes in priority we should be aware of?\n11:25 AM - Taylor (Product Owner): As of now, the priorities are stable, but I'll keep everyone updated on any changes from the stakeholder end. I will also refine the user stories in the backlog to ensure they're ready for the team.\n11:30 AM - Julian (Scrum Master): Thank you, Taylor. Before we wrap up, let's quickly go around the virtual room to address any immediate concerns or questions. Petra, any final thoughts?\n11:35 AM - Petra (Network Architect): All clear on my end. Ill start reaching out to potential vendors this afternoon.\n11:40 AM - Alex (Software Developer): No further questions. Im keen to start on the simulation design.\n11:45 AM - Taylor (Product Owner): Good from me as well. Let's get to work and make this sprint a success.\n11:50 AM - Julian (Scrum Master): Excellent. That concludes our planning session. Thanks for your contributions, everyone. Let's have a productive sprint. Well touch base in our daily stand-ups.\n**12:00 PM - [End of\n\n\n\n\n\n\n\n"
 }
