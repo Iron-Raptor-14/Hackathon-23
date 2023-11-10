@@ -1,5 +1,6 @@
 import re
 
+# This ticket takes an string as an input (feed from AI model), and reformats it into individual tickets in dictionary form in a list
 def ticket_splitter(input_string):
 
     # input_string = "Based on the transcript, here are a few Jira tickets that could be created:\n\n1. Ticket Title: Agile Work Environment Integration\n   - Description: Investigate and implement features to align the solution with Telstra's agile work environment, such as support for different types of agile meetings and ceremonies.\n   - Assignee: Steven Yuen\n   - Priority: High\n\n2. Ticket Title: Contextual Output Generation\n   - Description: Develop functionality to use the transcripts of past meetings as context to generate more accurate and valuable output for future meetings.\n   - Assignee: Steven Yuen\n   - Priority: Medium\n\n3. Ticket Title: Centralized Dashboard\n   - Description: Create a centralized dashboard to manage and track all meetings and their associated artifacts, providing a seamless experience for users.\n   - Assignee: Steven Yuen\n   - Priority: Medium\n\n4. Ticket Title: Copilot Integration and Customization\n   - Description: Explore the possibility of integrating Telstra's solution with Copilot, tailoring it to meet specific business needs and leveraging the existing platform.\n   - Assignee: Jason Hong\n   - Priority: Medium\n\n5. Ticket Title: Meeting Minutes Tailoring\n   - Description: Modify the meeting minutes feature to align with different meeting types, such as retros, stand-ups, and ceremonies, to provide more relevant and useful outputs.\n   - Assignee: Chris Qu\n   - Priority: Low\n\nPlease note that these suggested tickets are based on the information provided in the transcript and may need to be adjusted based on further discussions and requirements."
@@ -56,10 +57,9 @@ def rename_keys(dictionary, key_mapping):
                 new_dict[new_key] = value
     return new_dict
 
-
+# This function takes an input string from the AI model of action points and 
+# reformats them into a dictionary that is the preferred output format
 def action_splitter(input_string):
-
-    # print(input_string)
 
     
     # Split the input string into sections based on '\n\n'
@@ -86,14 +86,11 @@ def action_splitter(input_string):
         # Add the team member and their action items to the dictionary
         action_items[team_member] = action_item_list
 
-    # Print the resulting dictionary
-    # print(action_items)
-
     return action_items
 
+# This function takes an input string from the AI model of retro actions and 
+# reformats them into a dictionary that is the preferred output format
 def retro_splitter(input_string):
-
-    # print(input_string)
 
     # Split the input string into sections based on '\n\n'
     sections = input_string.split('\n\n')
@@ -115,7 +112,8 @@ def retro_splitter(input_string):
             action_items[action_item] = action_description
 
     return action_items
-
+# This function takes an input string from the AI model of user stories and 
+# reformats them into a dictionary that is the preferred output format
 def user_story_splitter(input_string):
     # Split the input string into requirements based on '\n\n'
     requirements = input_string.split('\n\n')
@@ -133,6 +131,8 @@ def user_story_splitter(input_string):
 
     return requirements_dict
 
+# This function takes an input string from the AI model of meeting minutes and 
+# reformats it into a dictionary that is the preferred output format
 def meeting_minute_string_to_dict(meeting_minutes_text):
 
     # print("Within this function")
@@ -198,6 +198,8 @@ def meeting_minute_string_to_dict(meeting_minutes_text):
 
     return meeting_minutes_dict
 
+# This function takes an input string from the AI model of a meeting agenda and 
+# reformats it into a dictionary that is the preferred output format
 def agend_to_dict(input_string):
     # Split the input string by lines
     lines = input_string.split('\n')
@@ -236,7 +238,25 @@ def agend_to_dict(input_string):
                 current_section['detail'].append(line)
     return agenda_dict
 
+# This function takes an input string with the meeting metadata
+# and converts it into a dictionary
+def split_meta_info(meeting_info):
+    info_dict = {}
+    lines = meeting_info.strip().split('\n')
+    
+    for line in lines:
+        key, value = line.split(': ')
+        if key == "Meeting Date":
+            info_dict["Meeting Date"] = value
+        elif key == "Attendees":
+            attendees = value.split('; ')
+            info_dict["Attendees"] = attendees
+        elif key == "Duration":
+            info_dict["Duration"] = value
+    
+    return info_dict
 
+# for testing only, run independently
 def main():
     action_splitter("Action Items:\n\n1. Steven Yuen:\n- Research and identify features that cater to Agile work environments.\n- Investigate the use of a centralized dashboard for managing meetings.\n- Determine how the solution can differentiate itself from Copilot.\n- Gather requirements and file from the stakeholders.\n\n2. Jason Hong:\n- Continue working on current tasks and projects.\n\n3. David Gailey:\n- Support the shift towards an Agile focus for the solution.\n- Assist in identifying unique features and value proposition compared to Copilot.\n\n4. Chris Qu:\n- Participate in discussions and provide input on the direction of the solution.\n- Assist in determining the necessary features for the Telstra-focused solution.\n\n5. All team members:\n- Collaborate on integrating Copilot into the solution in the long term.\n\n6. Steven Yuen and Jason Hong:\n- Discuss the issue of Copilot access and find a solution.\n\n7. Steven Yuen:\n- Chase up the requirements from the stakeholders.")
 

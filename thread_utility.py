@@ -1,7 +1,7 @@
 import threading
 import sys
 
-
+# class to hold a thread with outputs
 class ReturnValueThread(threading.Thread):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
